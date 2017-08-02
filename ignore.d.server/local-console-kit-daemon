@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ console-kit-daemon\[[0-9]+\]: GLib-CRITICAL: Source ID [0-9]+ was not found when attempting to remove it$

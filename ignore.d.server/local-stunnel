@@ -1,0 +1,7 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[:[0-9]+\])?: SSL_accept: Peer suddenly disconnected$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: Service smtp-tls-wrapper accepted connection from
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: Service smtp-tls-wrapper connected remote server from
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: connect_blocking: connected
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: Error detected on socket \(read\) file descriptor: Broken pipe
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: Connection reset: .* bytes sent to SSL
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ stunnel: LOG5(\[[0-9]+:[0-9]+\])?: Connection closed: .* bytes sent to SSL

@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ (/USR/SBIN/)?CRON\[[0-9]+\]: message repeated [0-9]+ times: \[ \([_[:alnum:]-]+\) CMD \(.*\)\]$

@@ -3,9 +3,12 @@
 # Ubuntu 16.04
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Stopping) User Manager for UID [0-9]+\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Started|Stopped) User Manager for UID [0-9]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Stopped|Stopping) CUPS Scheduler\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Stopped|Stopping|Started) Make remote CUPS printers available locally\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started) Network Manager Script Dispatcher Service\.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Started Session [0-9]+ of user [._[:alnum:]]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Starting (Daily apt (upgrade and clean |download )?activities|Cleanup of Temporary Directories)\.\.\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Started (Cleanup of Temporary Directories|Daily apt (upgrade and clean |download )?activities|ACPI event daemon)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Started (Run anacron jobs|CUPS Scheduler|Cleanup of Temporary Directories|Daily apt (upgrade and clean |download )?activities|ACPI event daemon)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Created|Removed) slice User Slice of [._[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reached|Stopped) target (Default|Basic System|Paths|Timers|Sockets)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in [0-9]+ms\.$

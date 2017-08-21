@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[0-9]+\]: \[system\] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[0-9]+\]: \[system\] Successfully activated service 'org.freedesktop.nm_dispatcher'$

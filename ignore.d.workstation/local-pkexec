@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pkexec: pam_unix\(polkit-1:session\): session opened for user root by \(uid=[0-9]+\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pkexec: pam_ck_connector\(polkit-1:session\): cannot determine display-device$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pkexec\[[0-9]+\]: [[:alpha:]]+: Executing command \[USER=[[:alpha:]]+\] \[TTY=[[:alpha:]]+\] \[CWD=[[:alnum:]/-]+\] \[COMMAND=[[:alnum:]/-]+\]$

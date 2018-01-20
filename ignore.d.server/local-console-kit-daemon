@@ -1,1 +1,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ console-kit-daemon\[[0-9]+\]: GLib-CRITICAL: Source ID [0-9]+ was not found when attempting to remove it$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ console-kit-daemon\[[0-9]+\]: console-kit-daemon\[[0-9]+\]: GLib-CRITICAL: Source ID [0-9]+ was not found when attempting to remove it$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ console-kit-daemon\[[0-9]+\]: \(process:[0-9]+\): GLib-CRITICAL \*\*: g_slice_set_config: assertion 'sys_page_size == 0' failed
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ console-kit-daemon\[[0-9]+\]: missing action

@@ -5,4 +5,5 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ NetworkManager\[[0-9]+\]: <info>  \[[0-9]+\.[0-9]+\]   lease time [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ NetworkManager\[[0-9]+\]: <info>  \[[0-9]+\.[0-9]+\]   hostname '.+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ NetworkManager\[[0-9]+\]: <info>  \[[0-9]+\.[0-9]+\]   domain name '.+'$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ NetworkManager\[[0-9]+\]: <info>  \[[0-9]+\.[0-9]+\]   domain search '.+'$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ NetworkManager\[[0-9]+\]: <info>  \[[0-9]+\.[0-9]+\] dhcp4 \(enp.s.\): state changed bound -> bound$

@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mythtv-status\[[0-9]+\]:.*Updating MythTV Status mythtv-status$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ mythtv-status\[[0-9]+\]:.*\.\.\.done\.$

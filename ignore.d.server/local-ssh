@@ -36,6 +36,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Corrupted MAC on input\. \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [[:alnum:].:]+: 11: PECL/ssh2 \(http://pecl\.php\.net/packages/ssh2\) \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from ::ffff:[\.0-9]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Did not receive identification string from [0-9\.]{7,15} port [0-9]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: bad client public DH value \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed: \([[:alnum:]]+,ssh-connection\) -> \([[:alnum:]]+,ssh-connection\) \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: invalid public DH value: <= 1 \[preauth\]$
@@ -65,6 +66,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Too many authentication failures( for [[:punct:][:alnum:]]+)? \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN) port [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (Disconnected from|Connection closed by) (authenticating|invalid) user [^[:space:]]+ [[:alnum:].:]+ port [0-9]+(\s+\[preauth\])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnected from user [^[:space:]]+ [[:alnum:].:]+ port [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Unable to negotiate with [[:alnum:].:]+ port [0-9]+: no matching key exchange method found\. Their offer: (,|diffie-hellman-group-exchange-sha1|diffie-hellman-group1-sha1)+ \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Unable to negotiate with [[:alnum:].:]+ port [0-9]+: no matching host key type found\. Their offer: (,|ssh-dss|ecdsa-sha2-nistp(256|384|521)|ssh-ed25519)+ \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_unix\(sshd:session\): session opened for user [^[:space:]]+ by \(uid=0\)$

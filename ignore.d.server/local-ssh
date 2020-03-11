@@ -43,6 +43,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [[:alnum:]\.:]+: 11: ok \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Timeout, client not responding\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [[:digit:]\.:]+(:)? (port [0-9]+:)?11: Normal Shutdown, Thank you for playing \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [[:digit:]\.:]+(:)? (port [0-9]+:)?11: Normal Shutdown \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received disconnect from [[:digit:]\.:]+: 13: Unable to authenticate \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: error: connect_to [._[:alnum:]-]+: unknown host \(Name or service not known\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Bad protocol version identification '(GET / HTTP/1.0|GET .* HTTP/1.1|[\\0-9]+|test||HELP)' from [[:digit:]\.]{6,15} port [[:digit:]]{3,5}$
@@ -64,6 +65,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]:( error:)? Received disconnect from [[:alnum:].:]+(: | port [0-9]+:)3: com\.jcraft\.jsch\.JSchException: (Auth fail|Auth cancel) \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]:( error:)? Received disconnect from [[:alnum:].:]+(: | port [0-9]+:)3: java\.net\.SocketTimeoutException: Read timed out \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Too many authentication failures( for [[:punct:][:alnum:]]+)? \[preauth\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting authenticating user [^[:space:]]+ [[:alnum:].:]+ port [0-9]+: Too many authentication failures( for [[:punct:][:alnum:]]+)? \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: I(llegal|nvalid) user [^[:space:]]+ from ([:.[:xdigit:]]+|UNKNOWN) port [0-9]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (Disconnected from|Connection closed by) (authenticating|invalid) user [^[:space:]]+ [[:alnum:].:]+ port [0-9]+(\s+\[preauth\])?$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnected from user [^[:space:]]+ [[:alnum:].:]+ port [0-9]+$

@@ -2,3 +2,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: NTP packet received from unauthorised host [[:digit:]\.]+ port [[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: System clock wrong by [[:digit:]\-\.]+ seconds, adjustment started$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Can't synchronise: no selectable sources$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Source [[:xdigit:].:]{3,39} replaced with [[:xdigit:].:]{3,39}$

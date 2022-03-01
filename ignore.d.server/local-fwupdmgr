@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupdmgr\[[0-9]+\]: Fetching (signature|metadata) https:[.\/[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupdmgr\[[0-9]+\]: Updating lvfs$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupdmgr\[[0-9]+\]: Successfully downloaded new metadata: [0-9]+ local devices supported$

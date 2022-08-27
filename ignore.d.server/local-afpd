@@ -1,2 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd: PAM audit_log_acct_message\(\) failed: Operation not permitted$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd: pam_unix\(netatalk:session\): session closed for user .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ afpd: pam_unix\(netatalk:session\): session opened for user .+ by \(uid=0\)$

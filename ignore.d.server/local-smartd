@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ smartd\[[0-9]+\]:.*Device: \/dev\/sd. \[SAT\], CHECK POWER STATUS spins up disk

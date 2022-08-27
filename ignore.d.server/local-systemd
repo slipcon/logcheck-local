@@ -20,6 +20,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Rotate log files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily man-db regeneration(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Refresh fwupd metadata and update motd(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: fwupd-refresh.service: Main process exited, code=exited, status=1\/FAILURE$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: fwupd-refresh.service: Failed with result \'exit-code\'\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Failed to start Refresh fwupd metadata and upate motd\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on) REST API socket for snapd user session agent.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on) debconf communication socket.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on) GnuPG cryptographic agent.*

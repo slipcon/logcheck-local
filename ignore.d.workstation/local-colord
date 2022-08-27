@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ colord\[[0-9]+\]:.*failed to get session \[pid [0-9]+\]: No data available$

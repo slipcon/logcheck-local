@@ -9,8 +9,10 @@
 # Ubuntu 16.04
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Clean php session files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-0.mount|user@0|user-runtime-dir@0|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-([0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news).service: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-download|systemd-tmpfiles-clean|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily-upgrade).service: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|plocate-updatedb).service: Consumed .*s CPU time.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Message of the Day(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily dpkg database backup service(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) PackageKit Daemon(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Exit the Session(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Online ext4 Metadata Check for All Filesystems(\.)+

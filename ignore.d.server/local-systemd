@@ -9,9 +9,10 @@
 # Ubuntu 16.04
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Clean php session files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-0.mount|user@0|user-runtime-dir@0|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-([0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-download|systemd-tmpfiles-clean|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade).service: Deactivated successfully.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|plocate-updatedb).service: Consumed .*s CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-download|fwupd-refresh|systemd-tmpfiles-clean|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade).service: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb).service: Consumed .*s CPU time.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Message of the Day(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update the plocate database(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily dpkg database backup service(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) PackageKit Daemon(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Exit the Session(\.)+
@@ -20,7 +21,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Ubuntu Advantage Timer for running repeated jobs(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Discard unused blocks on filesystems from \/etc\/fstab(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) D-Bus User Message Bus Socket(\.)+
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Stopped|Finished) User Runtime Directory \/run\/user\/([0-9]+(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Stopped|Finished) User Runtime Directory \/run\/user\/([0-9])+(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Rotate log files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily man-db regeneration(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Refresh fwupd metadata and update motd(\.)+

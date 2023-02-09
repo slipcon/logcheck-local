@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana-server\[[[:digit:]]+\]: logger=cleanup t=.* level=info msg=\"Completed cleanup jobs\" duration=.*ms$

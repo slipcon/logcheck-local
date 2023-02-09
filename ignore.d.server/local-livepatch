@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ canonical-livepatch.canonical-livepatchd\[[0-9]+\]:.*Client information is recent, not refreshing\.

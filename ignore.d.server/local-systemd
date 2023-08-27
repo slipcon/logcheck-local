@@ -10,8 +10,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Clean php session files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) snap.canonical-livepatch.canonical-livepatch\..*\.scope(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-0.mount|user@0|user-runtime-dir@0|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-([0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-download|fwupd|fwupd-refresh|systemd-tmpfiles-clean|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade|apt-news|esm-cache).service: Deactivated successfully.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb).service: Consumed .*s CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-motd|update-notifier-download|fwupd|fwupd-refresh|systemd-tmpfiles-clean|session-([0-9]+).scope|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade|apt-news|esm-cache|e2scrub_all|user@0|run-user-0.mount|user-runtime-dir@0)(.service)?: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb|session-([0-9]+).scope|user-0.slice|fwupd)(.service)?: Consumed .*s CPU time.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Message of the Day(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update APT News(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update the local ESM caches(\.)+
@@ -20,6 +20,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) PackageKit Daemon(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Exit the Session(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Online ext4 Metadata Check for All Filesystems(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Check to see whether there is a new version of Ubuntu available(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Certbot(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Ubuntu Advantage Timer for running repeated jobs(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Discard unused blocks on filesystems from \/etc\/fstab(\.)+

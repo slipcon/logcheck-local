@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ polkitd\(authority=local\): Unregistered Authentication Agent for unix-process:.*$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ polkitd\(authority=local\): Registered Authentication Agent for unix-process:.*$

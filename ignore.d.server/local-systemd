@@ -9,10 +9,13 @@
 # Ubuntu 16.04
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Clean php session files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) snap.canonical-livepatch.canonical-livepatch-.*\.scope(\.)+
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-0.mount|user@0|user-runtime-dir@0|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-([0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-motd|update-notifier-download|fwupd|fwupd-refresh|systemd-tmpfiles-clean|session-([0-9]+).scope|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade|apt-news|esm-cache|e2scrub_all|user@0|run-user-0.mount|user-runtime-dir@0)(.service)?: Deactivated successfully.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb|session-([0-9]+).scope|user-0.slice|fwupd)(.service)?: Consumed .*s CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: snap.canonical-livepatch.canonical-livepatch-.*\.scope(\.)+: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Finished Ubuntu Pro Timer for running repeated jobs.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-[0-9]+.mount|user@[0-9]+|user-runtime-dir@[0-9]+|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-(.?[0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-motd|update-notifier-download|fwupd|fwupd-refresh|systemd-tmpfiles-clean|session-(.?[0-9]+).scope|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade|apt-news|esm-cache|e2scrub_all|user@[0-9]+|run-user-[0-9]+.mount|user-runtime-dir@[0-9]+|apt-show-versions|mdmonitor-oneshot)(.service)?: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb|session-(.?[0-9]+).scope|user-0.slice|fwupd|apt-show-versions|fstrim|background.slice)(.service)?: Consumed .*s CPU time.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Message of the Day(\.)+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily apt-show-versions index rebuild(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update APT News(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update the local ESM caches(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update the plocate database(\.)+
@@ -41,7 +44,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Stopping) User Manager for UID [0-9]+\.\.\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Started|Stopped) User Manager for UID [0-9]+\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on|Stopped|Stopping) CUPS Scheduler\.+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on|Starting|Stopped|Stopping) D-Bus User Message Bus Socket\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Closed|Listening on|Starting|Stopped|Stopping) D-Bus User Message Bus( Socket)?\.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reloading|Reloaded) The Apache HTTP Server\.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Listening on|Closed) GnuPG cryptographic agent and passphrase cache \(access for web browsers\)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Stopped|Stopping|Started) Make remote CUPS printers available locally\.+$
@@ -51,6 +54,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Started|Finished) (Run anacron jobs|CUPS Scheduler|Cleanup of Temporary Directories|Daily apt (upgrade and clean |download )?activities|ACPI event daemon)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Created|Removed) slice User Slice of (UID )?[._[:alnum:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Created|Removed) slice User Application Slice\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Created|Removed) slice User Background Tasks Slice\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reached|Stopped|Queued start job for default) target (Default|Basic System|Paths|Timers|Sockets|Main User Target|Exit the Session)\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in [0-9]+ms\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Starting Exit the Session\.\.\.$

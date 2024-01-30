@@ -2,4 +2,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=cleanup t=.* level=info msg=\"Completed cleanup jobs\" duration=.*s$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=grafana.update.checker t=.* level=info msg=\"Update check succeeded\" duration=.*ms$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=plugins.update.checker t=.* level=info msg=\"Update check succeeded\" duration=.*ms$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=grafana.update.checker t=.* level=info msg=\"Update check succeeded\" duration=.*ms$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=infra.usagestats t=.* level=info msg=\"Usage stats are ready to report\"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana\[[[:digit:]]+\]: logger=infra.usagestats t=.* level=info msg=\"Sent usage stats\" duration=.*$

@@ -9,11 +9,11 @@
 # Ubuntu 16.04
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Clean php session files(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) snap.canonical-livepatch.canonical-livepatch-.*\.scope(\.)+
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: snap.canonical-livepatch.canonical-livepatch-.*\.scope(\.)+: Deactivated successfully.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: snap.canonical-livepatch.canonical-livepatch-.*\.scope\.*: Deactivated successfully.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Finished Ubuntu Pro Timer for running repeated jobs.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-[0-9]+.mount|user@[0-9]+|user-runtime-dir@[0-9]+|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-(.?[0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|systemd-tmpfiles-clean|apt-daily|apt-daily-upgrade|certbot|motd-news|packagekit|run-user-[0-9]+\.mount|user@[0-9]+|user-runtime-dir@[0-9]+|man-db|logrotate|fwupd|fwupd-refresh|gpg-agent(-browser|-extra|-ssh)?|dbus|dirmngr|pk-debconf-helper|snapd.session-agent|systemd-exit|session-(.?[0-9]+).scope|e2scrub_all|fstrim|ua-timer)(.socket)?(.service)?: Succeeded.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (phpsessionclean|certbot|motd-news|ua-timer|update-notifier-motd|update-notifier-download|fwupd|fwupd-refresh|systemd-tmpfiles-clean|session-(.?[0-9]+).scope|dpkg-db-backup|man-db|plocate-updatedb|logrotate|fstrim|apt-daily|apt-daily-upgrade|apt-news|esm-cache|e2scrub_all|user@[0-9]+|run-user-[0-9]+.mount|user-runtime-dir@[0-9]+|apt-show-versions|mdmonitor-oneshot)(.service)?: Deactivated successfully.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb|session-(.?[0-9]+).scope|user-0.slice|fwupd|apt-show-versions|fstrim|background.slice|certbot)(.service)?: Consumed .*s CPU time.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (apt-daily-upgrade|apt-daily|plocate-updatedb|session-.?[0-9]+.scope|user-[0-9]+.slice|fwupd|apt-show-versions|fstrim|background.slice|certbot)(.service)?: Consumed .*s CPU time.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Message of the Day(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Daily apt-show-versions index rebuild(\.)+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Starting|Started|Stopping|Finished) Update APT News(\.)+

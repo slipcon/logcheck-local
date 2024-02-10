@@ -13,3 +13,6 @@
 ^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: No working leases in persistent database - sleeping\.$
 ^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: Sending on[[:space:]]+[^[:space:]]+$
 ^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: bound to [.0-9]{7,15} -- renewal in [0-9]+ seconds\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: PRC: Renewing lease on eth0\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: XMT: Renew on eth0, interval [0-9]+ms\.$
+^[[:alpha:]]{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhclient\[[[:digit:]]+\]: RCV: Reply message on eth0 from .*\.$

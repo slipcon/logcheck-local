@@ -1,0 +1,3 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ python3\[[[:digit:]]+\]: \[\".*\", \"DEBUG\", \"ubuntupro\.timer\", \"run\", 52, \"Running job: (metering|update_messaging)\", \{\}\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ python3\[[[:digit:]]+\]: \[\".*\", \"DEBUG\", \"ubuntupro\.timer\", \"run\", 54, \"Executed job: (metering|update_messaging)\", \{\}\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ python3\[[[:digit:]]+\]: \[\".*\", \"DEBUG\", \"ubuntupro\.timer\.update_messaging\", \"update_motd_messages\", 64, \"Updating Ubuntu Pro messages for MOTD\.\", \{\}\]
